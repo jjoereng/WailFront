@@ -79,7 +79,7 @@ const EPK = (props) => {
         <Logo color={'black'}></Logo>
       </div>
       </div>
-      <img class="responsive" src="/images/epkbotimg.jpg" />
+      <img class="responsive" src="/images/epkbotimg.png" />
     </div>
   );
 }
