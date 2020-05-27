@@ -4,7 +4,6 @@ import groq from 'groq';
 import client from '../client';
 import BlockContent from '@sanity/block-content-to-react'
 import Logo from '../components/Logo';
-
 import styles from './epk.module.scss';
 import imageUrlBuilder from '@sanity/image-url';
 
@@ -33,14 +32,12 @@ const EPK = (props) => {
               <h2>Bio</h2>
               {bios.map(bio => 
               <div> 
-                {bio.originalFilename}
+                <a href={bio.url}>{bio.originalFilename}</a>
               </div>
               )}
              </div> 
           }
              </div>
-   
-         
           </div>
           {pressphotos && 
             <div id={styles.pressPhotos}>
@@ -48,17 +45,15 @@ const EPK = (props) => {
               {pressphotos.map(pressphoto => 
               <div className={styles.pressPhoto}>
               <a href={urlFor(pressphoto).url()}>
-                <img class="item responsive" src={urlFor(pressphoto).width(400).url()}/>
+                <img class="responsive" src={urlFor(pressphoto).width(400).url()}/>
               </a>
               </div>
               )}
             </div> 
           }
         </div>
-        
           {upcomingReleases && 
           <div>
-
             <h2>Upcoming releases</h2>
             <div id={styles.upcoming}>
               {upcomingReleases.map(upcoming => 
@@ -73,6 +68,7 @@ const EPK = (props) => {
           </div> 
           </div>
           }
+       <h2>Official logos</h2>
        <div className={styles.logos}>
         <Logo color={'white'}></Logo>
         <Logo color={'red'}></Logo>
