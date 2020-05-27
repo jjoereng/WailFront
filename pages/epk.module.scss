@@ -1,0 +1,85 @@
+@import '../theme/responsive.scss';
+
+@font-face {
+    font-family: "EPKFont";
+    src: url('../public/fonts/Amiri-Regular.ttf');
+}
+@font-face {
+    font-family: "EPKFontBold";
+    src: url('../public/fonts/Amiri-Bold.ttf');
+}
+#epk {
+    max-width: 1500px;
+    margin: 0 auto;
+    font-family: "EPKFont";
+}
+
+#epkTitle {
+    align-self: center;
+    border-bottom: rgb(85, 22, 22) 2px solid;
+    width: 100%;
+}
+
+
+#mainText {
+    min-width: 260px;
+    flex-basis: 70%;
+    @include sm {
+        width: 100%;
+        flex-basis: 100%;
+
+    }
+}
+#pressPhotos {
+    width: 350px;
+    @include sm {
+        width: 100%;
+    }
+    .pressPhoto {
+        margin-bottom: 2px;
+        flex-direction: row;
+    }
+}
+
+.logos {
+    background-color: rgb(221, 209, 209);
+    text-align: center;
+    padding-left: -50px;
+}
+
+.bottomBackgroundImage {
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    @include sm {
+
+    }
+}
+
+
+#downloads {
+}
+
+#upcoming {
+    display: flex;
+    flex-wrap: wrap;
+    .upcomingItem {
+        font-family: "EPKFontBold";
+        padding: 2px;
+        flex-grow: 1;
+        .upcomingImage {
+            img {
+               
+            }
+        }
+
+        .releaseDate {
+        }
+    }
+  
+}

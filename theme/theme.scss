@@ -1,0 +1,65 @@
+@import 'responsive.scss';
+
+html {
+    height: 100%;
+    body {
+        background-color: whitesmoke;
+        height: 100%;
+        margin: 0;
+        font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+    
+}
+
+
+#__next {
+    height: 100%;
+}
+
+
+.container-vertical {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    .item {
+
+    }
+
+    #content {
+        width: 100%;
+        flex-grow: 1;
+
+    }
+
+    #header {
+    }
+
+    #footer {
+        padding: 50px;
+    }
+}
+
+.center-text {
+    text-align: center;
+}
+
+.container-horizontal {
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    .item {
+
+    }
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.page {
+    padding: 50px;
+    @include sm {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,18 @@
+#index {
+    background-color: rgb(122, 24, 37);
+    height: auto;
+    min-height: 100%;
+}
+
+#soon {
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 20vw;
+    font-family: 'SoonFont';
+    text-align: center;
+}
+
+@font-face {
+    font-family: "SoonFont";
+    src: url('../public/fonts/YesevaOne-Regular.ttf');
+}
