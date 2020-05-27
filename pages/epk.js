@@ -88,7 +88,6 @@ function urlFor (source) {
   return imageUrlBuilder(client).image(source)
 }
 
-
 const query = groq`*[title == "EPK"][0]{
   title,
   body,
