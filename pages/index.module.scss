@@ -1,9 +1,10 @@
 @import '../theme/responsive.scss';
 
 #index {
-    background-color: rgb(95, 23, 23);
+    background-color: rgb(175, 78, 78);
     height: auto;
     min-height: 100%;
+    position: relative;
 }
 
 #header {
@@ -32,3 +33,32 @@
     padding: 30px;
     text-align: center;
 }
+
+ 
+.squareBackground {
+    width: 100%;
+}
+
+.presaveButton {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    width: 6em;
+    height: 3em;
+    margin-left: -3em;
+    background-color: whitesmoke;
+    border: whitesmoke;
+    box-shadow: 3px 3px 3px 3px;
+    border-radius: 7px;
+    font-size: 1.5em !important;
+    font-family: 'SoonFont';
+    color:rgb(26, 24, 24);
+    cursor: pointer;
+}
+
+.promoContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+

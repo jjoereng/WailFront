@@ -13,9 +13,12 @@ const Index = (props) => {
     return (
         <div id={styles.index}>
           <div id={styles.header} class="item">
-            <Logo color={'white'}></Logo>
           </div>
-          <div class='embed-container'><iframe src='https://www.youtube.com/embed/bByIyJHAo_Y' frameborder='0' allowfullscreen></iframe></div>
+          <div class={styles.promoContainer}>
+            <img class={styles.squareBackground} src={'/images/prerelease.png'}></img>
+            <a href="https://orcd.co/kboey28"><button class={styles.presaveButton} id="presave">Presave now</button></a>
+           
+          </div>
           <div id="footer" class="">
             <div class={styles.someLinks}>
               <SoMeIcon link="https://www.facebook.com/WAIL.official.NO/" logo="facebook"></SoMeIcon>
