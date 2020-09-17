@@ -71,11 +71,14 @@
     .upcomingItem {
         font-family: "EPKFontBold";
         padding: 2px;
-        flex-grow: 1;
-        .upcomingImage {
-            img {
-               
-            }
+        width: 100%;
+        @include md {
+            width: 49%;
+        }
+
+        @include xl {
+            width: 30.33%;
+            margin: 10px;
         }
 
         .releaseDate {

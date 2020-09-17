@@ -6,6 +6,8 @@ import BlockContent from '@sanity/block-content-to-react'
 import Logo from '../components/Logo';
 import styles from './epk.module.scss';
 import imageUrlBuilder from '@sanity/image-url';
+import SoMeIcon from '../components/SoMeIcon';
+import SoMeContainer from '../components/SoMeContainer';
 
 const EPK = (props) => {
   const {
@@ -74,6 +76,14 @@ const EPK = (props) => {
         <Logo color={'red'}></Logo>
         <Logo color={'black'}></Logo>
       </div>
+      <SoMeContainer>
+              <SoMeIcon link="https://www.facebook.com/WAIL.official.NO/" logo="facebook"></SoMeIcon>
+              <SoMeIcon link="https://open.spotify.com/artist/0pmwXDz7lf1P744YmhBfOX" logo="spotify"></SoMeIcon>
+              <SoMeIcon link="https://wailofficial.bandcamp.com/" logo="bandcamp"></SoMeIcon>
+              <SoMeIcon link="https://deezer.page.link/3GXpCGqGkxu93TP38" logo="deezer"></SoMeIcon>
+              <SoMeIcon link="https://www.youtube.com/channel/UCjLB9u-kec86ptpH-WFwbeg" logo="youtube"></SoMeIcon>
+              <SoMeIcon link="https://www.instagram.com/wail_band" logo="instagram"></SoMeIcon>
+            </SoMeContainer>
       </div>
       <img class="responsive" src="/images/epkbotimg.png" />
     </div>
