@@ -56,7 +56,7 @@ const EPK = (props) => {
         </div>
           {upcomingReleases && 
           <div>
-            <h2>Upcoming releases</h2>
+            <h2>Current release cycle</h2>
             <div id={styles.upcoming}>
               {upcomingReleases.map(upcoming => 
               <div className={styles.upcomingItem}>
@@ -72,6 +72,7 @@ const EPK = (props) => {
           }
        <h2>Official logos</h2>
        <div className={styles.logos}>
+         
         <Logo color={'white'}></Logo>
         <Logo color={'red'}></Logo>
         <Logo color={'black'}></Logo>
