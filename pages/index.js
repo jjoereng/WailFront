@@ -1,18 +1,19 @@
 // index.js
-import Link from 'next/link';
-import groq from 'groq';
-import client from '../client';
-import { propTypes } from '@sanity/block-content-to-react';
-import Logo from '../components/Logo';
 import styles from './index.module.scss';
 import SoMeIcon from '../components/SoMeIcon';
 import SoMeContainer from '../components/SoMeContainer';
+import Head from 'next/head';
 
 const Index = (props) => {
     const {posts = [] } = props;
 
     return (
         <div id={styles.index}>
+          <Head>
+            <title>Wail - Norwegian heavy metal band website</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="shortcut icon" href="/static/favicon.ico" />
+          </Head>
           <div id={styles.header} class="item">
           </div>
           <div class={styles.promoContainer}>
