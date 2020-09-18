@@ -27,7 +27,7 @@ const Index = (props) => {
               <SoMeIcon link="https://open.spotify.com/artist/0pmwXDz7lf1P744YmhBfOX" logo="spotify"></SoMeIcon>
               <SoMeIcon link="https://wailofficial.bandcamp.com/" logo="bandcamp"></SoMeIcon>
               <SoMeIcon link="https://deezer.page.link/3GXpCGqGkxu93TP38" logo="deezer"></SoMeIcon>
-              <SoMeIcon link="https://www.youtube.com/channel/UCjLB9u-kec86ptpH-WFwbeg" logo="youtube"></SoMeIcon>
+              <SoMeIcon link="https://www.youtube.com/watch?v=m9jOR_hVx94&list=OLAK5uy_m-efanrkgcU3T2WdmZgZ5iuECFIahjPK8" logo="youtube"></SoMeIcon>
               <SoMeIcon link="https://www.instagram.com/wail_band" logo="instagram"></SoMeIcon>
             </SoMeContainer>
           </div>
