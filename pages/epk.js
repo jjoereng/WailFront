@@ -15,7 +15,10 @@ const EPK = (props) => {
     body = [],
     pressphotos = [],
     bios = [],
-    upcomingReleases = []
+    upcomingReleases = [],
+    importantLinks = [],
+    otherLinks = [],
+    announcement = ""
 
   } = props;
 
@@ -25,6 +28,11 @@ const EPK = (props) => {
         <div class="container-horizontal">
           <h1 id={styles.epkTitle} class="center-text">{title}</h1>
         </div>
+        {announcement &&
+           <div>
+            <BlockContent blocks={announcement}/>
+           </div>
+        }
         <div className={styles.wrapper}>
           <div id={styles.mainText}>
             <BlockContent blocks={body}/>
@@ -70,6 +78,15 @@ const EPK = (props) => {
           </div> 
           </div>
           }
+          {otherLinks &&
+            <div id={styles.otherLinks}>
+                {otherLinks.map(link =>
+                <div>
+                  <a href={link.url}>{link.title}</a>
+                </div>
+                )}
+            </div>
+          }
        <h2>Official logos</h2>
        <div className={styles.logos}>
          
@@ -77,6 +94,18 @@ const EPK = (props) => {
         <Logo color={'red'}></Logo>
         <Logo color={'black'}></Logo>
       </div>
+      {importantLinks && 
+          <div>
+            <h2>Important links</h2>
+            <div id={styles.upcoming}>
+              {importantLinks.map(link => 
+              <div className={styles.upcomingItem}>
+                  <a href={link.url}>{link.title}</a>
+              </div>
+              )}
+          </div> 
+          </div>
+          }
       <SoMeContainer>
               <SoMeIcon link="https://www.facebook.com/WAIL.official.NO/" logo="facebook"></SoMeIcon>
               <SoMeIcon link="https://open.spotify.com/artist/0pmwXDz7lf1P744YmhBfOX" logo="spotify"></SoMeIcon>
@@ -100,7 +129,10 @@ const query = groq`*[title == "EPK"][0]{
   body,
   pressphotos,
   "bios": bios[].asset->{url, originalFilename},
-  upcomingReleases
+  upcomingReleases,
+  announcement,
+  importantLinks,
+  otherLinks
 }`;
 
 EPK.getInitialProps = async function (context) {
