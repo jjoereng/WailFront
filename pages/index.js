@@ -18,7 +18,7 @@ const Index = (props) => {
           </div>
           <div class={styles.promoContainer}>
             <img class={styles.squareBackground} src={'/images/civmax.png'}></img>
-            <a href="https://open.spotify.com/artist/0pmwXDz7lf1P744YmhBfOX"><button class={styles.presaveButton} id="presave">Listen now</button></a>
+            <a href="https://hypeddit.com/link/4fczh4"><button class={styles.presaveButton} id="presave">Listen now</button></a>
            
           </div>
           <div id="footer">
